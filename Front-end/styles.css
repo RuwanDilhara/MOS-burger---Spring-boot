@@ -1,0 +1,26 @@
+body{
+    background-image: url(./img/img/1.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    
+}
+.email{
+    background-color: none;
+}
+#blur-card {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+#tasatsstya:hover{
+    background-color:rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.btn:hover {
+    background-color: rgb(255, 0, 0); /* Change background to white */
+    color: black; /* Change text color to black */
+    
+}

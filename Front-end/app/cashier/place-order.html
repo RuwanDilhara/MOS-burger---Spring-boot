@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom ">
+        <div class="container">
+            <div class="d-flex  flex-wrap align-items-center d-flex justify-content-around ">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img src="../../img/img/mos_burgerlogo.png" class="bi me-2" width="80" height="55" role="img"
+                        aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap">
+                </a>
+
+                <!-- <ul class="nav mx-auto col-12 col-lg-auto me-lg-auto ">
+              <li><a href="#" class="nav-link px-2 link-secondary">HOME</a></li>
+              <li><a href="#" class="nav-link px-2 link-body-emphasis">MENU</a></li>
+              <li><a href="#" class="nav-link px-2 link-body-emphasis">ABOUT</a></li>
+              <li><a href="#" class="nav-link px-2 link-body-emphasis">CONTACT</a></li>
+            </ul> -->
+
+                <div
+                    class="cashier-acc p-2 border border rounded d-flex flex-wrap align-items-center d-flex justify-content-around justify-content-lg-start">
+                    <h6 class="me-2 mt-2">Ruwan Dilhara</h6>
+                    <div id="drop-don" class="dropdown text-end ">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32"
+                                class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-small ">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form> -->
+
+
+            </div>
+        </div>
+    </header>
+
+    <div class="test p-4 border d-flex">
+
+        <div class="menu m-auto col-8 p-4 border rounded  mx-auto">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button onclick="add_to_card()" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1"
+                        aria-selected="true">Burgers</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-2"
+                        type="button" role="tab" aria-controls="pills-2" aria-selected="false">Submarines</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-3"
+                        type="button" role="tab" aria-controls="pills-3" aria-selected="false">Fries</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-4"
+                        type="button" role="tab" aria-controls="pills-4" aria-selected="false">Pasta</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-5"
+                        type="button" role="tab" aria-controls="pills-5" aria-selected="false">Chicken</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-6"
+                        type="button" role="tab" aria-controls="pills-6" aria-selected="false">Beverages</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab"
+                    tabindex="0">
+
+                    <div id="burger-cards" class="card p-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <h1>burger</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
+
+                    <div id="submarine-cards" class="card p-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <h1>submarine</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+
+                    <div id="fries-cards" class="card p-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <h1>fries</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
+
+                    <div id="pasta-cards" class="card p-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <h1>pasta</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab" tabindex="0">
+                    <div id="chicken-cards" class="card p-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <h1>chicken</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab" tabindex="0">
+
+                    <div id="bevarages-cards" class="card p-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <h1>bevarages</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="order-container d-flex w-100 border justify-content-center m-3">
+            <form class="w-100 p-3 ">
+                <label for="#Order ID"></label>
+                <div class="mb-3">
+                    <label for="orderId" class="form-label">Order ID</label>
+                    <input type="text" class="form-control" id="orderId" value="P007" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="orderDate" class="form-label">Order Date</label>
+                    <input type="text" class="form-control" id="orderDate" value="30/12/2024" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="customerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="customerName"
+                        placeholder="Enter customer name">
+                </div>
+                <div class="mb-3">
+                    <label for="custLocation" class="form-label">Location</label>
+                    <input type="text" class="form-control" value="" id="custLocation" placeholder="Enter location"
+                        readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Search by Phone Number</label>
+                    <input type="text" class="form-control d-flex" id="custPhoneNumber" placeholder="Enter phone number">
+                    <input type="button" onclick="searchCustomer()" class="d-flex w-100 me-2 mt-2 rounded border p-2 bg-success text-white fw-bold" value="Search">
+                </div>
+
+
+                <div id="cart-list" class="mb-3 ">
+                    <h5>Total Items: <label id="totalItems">0</label>
+                        <a class="d-flex justify-content-end" href="" class="text-danger ms-3">Clear all</a>
+                    </h5>
+                    <!-- <div  class="d-flex justify-content-between align-items-center">
+            <div  class="d-flex">
+              <p class="mb-0"></p>
+              <p></p>
+            </div>
+            <div  class="d-flex align-items-center">
+              <button type="button" class="btn btn-outline-secondary btn-sm">-</button>
+              <input type="text" class="form-control form-control-sm mx-2 text-center" style="width: 50px;" value="1" readonly>
+              <button type="button" class="btn btn-outline-secondary btn-sm">+</button>
+            </div>
+            <div>Rs 1600.00</div>
+            <button type="button" class="btn  btn-sm"><img style="width: 15px;" src="../assets/icon/delete.png" alt=""></button>
+          </div> -->
+                </div>
+
+                <div id="order-summary" class="mb-3">
+                    <h5 class="text-end">Price: <label style="color: orange;">Rs 0.00</label></h5>
+                    <p class="text-end mb-0">Sub Total: Rs -0</p>
+                    <p class="text-end">Discount: Rs 0.00</p>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="reset" class="btn btn-primary ">Clear</button>
+                    <button onclick="generatePDF()" type="submit" class="btn btn-primary">Place Order</button>
+                </div>
+            </form>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+
+        <script type="module" src="../../js/cashier/card-loader.js"></script>
+        <script type="module" src="../../db/item.js"></script>
+        <script  src="../../js/cashier/cashier_option.js"></script>
+
+
+
+</body>
+
+</html>

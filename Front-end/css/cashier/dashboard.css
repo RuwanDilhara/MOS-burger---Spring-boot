@@ -1,0 +1,18 @@
+body {
+    background-image: url("../../img/img/1.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+}
+
+#blur-card {
+    width: 50rem;
+    border-radius: 15px;
+    margin-left: 10%;
+}
+h1{
+    font-weight: 900;
+}
